@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contato</title>
+    <style>
+      body {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #0d0729; /* Cor de fundo para a página */
+      }
+
+      h1 {
+        color: #f8f4f4;
+      }
+
+      form {
+        width: 50%;
+        border: 2px solid rgb(248, 246, 248);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center; /* Alinhar o texto do formulário à esquerda */
+        background-color: #ffffff; /* Cor de fundo para o formulário */
+        margin: 20px; /* Margens ao redor do formulário */
+        position: relative; /* Define o contexto de empilhamento para elementos filhos */
+        z-index: 1; /* Define a ordem de empilhamento para o formulário */
+      }
+
+      label {
+        display: block;
+        margin-top: 10px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+      }
+
+      input[type="submit"] {
+        background-color: #0d0729;
+        color: #fdfbfb;
+        border: none;
+        padding: 10px 20px;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0307f6;
+      }
+
+      .return-link {
+        margin-top: 20px;
+        display: block;
+      }
+
+      .return-link a {
+        color: #f8f8f9;
+        text-decoration: none;
+      }
+
+      .return-link a:hover {
+        text-decoration: underline;
+      }
+
+      /* Estilo para a imagem */
+      .form-image {
+        max-width: 20%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      /* Centralizar campos do formulário */
+      .form-field {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Contato</h1>
+
+    <form>
+      <!-- Incluindo uma imagem -->
+      <img src="img/LOGO 1.png" alt="Imagem de Cadastro" class="form-image">
+
+      <div class="form-field">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-field">
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone">
+      </div>
+
+      <div class="form-field">
+        <label for="endereco">Descreva:</label>
+        <textarea id="endereco" name="endereco" rows="4" cols="50"></textarea>
+      </div>
+
+      <input type="submit" value="ENVIAR">
+    </form>
+
+    <!-- Link de retorno para a página de entrada -->
+    <div class="return-link">
+      <a href="contato.html">Voltar para a Página de Entrada</a>
+    </div>
+  </body>
+</html>
